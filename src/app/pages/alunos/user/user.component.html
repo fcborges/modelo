@@ -1,0 +1,523 @@
+<!-- <div class="row">
+  <div class="col-md-4">
+    <div class="card card-user">
+      <div class="image">
+        <img src="assets/img/damir-bosnjak.jpg" alt="...">
+      </div>
+      <div class="card-body">
+        <div class="author">
+          <a href="#">
+            <img class="avatar border-gray" src="assets/img/mike.jpg" alt="...">
+            <h5 class="title">Chet Faker</h5>
+          </a>
+          <p class="description">
+            @chetfaker
+          </p>
+        </div>
+        <p class="description text-center">
+          "I like the way you work it
+          <br> No diggity
+          <br> I wanna bag it up"
+        </p>
+      </div>
+      <div class="card-footer">
+        <hr>
+        <div class="button-container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-6 ml-auto">
+              <h5>12
+                <br>
+                <small>Files</small>
+              </h5>
+            </div>
+            <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
+              <h5>2GB
+                <br>
+                <small>Used</small>
+              </h5>
+            </div>
+            <div class="col-lg-3 mr-auto">
+              <h5>24,6$
+                <br>
+                <small>Spent</small>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Team Members</h4>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled team-members">
+          <li>
+            <div class="row">
+              <div class="col-md-2 col-2">
+                <div class="avatar">
+                  <img src="assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image"
+                    class="img-circle img-no-padding img-responsive">
+                </div>
+              </div>
+              <div class="col-md-7 col-7">
+                DJ Khaled
+                <br />
+                <span class="text-muted">
+                  <small>Offline</small>
+                </span>
+              </div>
+              <div class="col-md-3 col-3 text-right">
+                <button class="btn btn-sm btn-outline-success btn-round btn-icon"><i
+                    class="fa fa-envelope"></i></button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-2 col-2">
+                <div class="avatar">
+                  <img src="assets/img/faces/joe-gardner-2.jpg" alt="Circle Image"
+                    class="img-circle img-no-padding img-responsive">
+                </div>
+              </div>
+              <div class="col-md-7 col-7">
+                Creative Tim
+                <br />
+                <span class="text-success">
+                  <small>Available</small>
+                </span>
+              </div>
+              <div class="col-md-3 col-3 text-right">
+                <button class="btn btn-sm btn-outline-success btn-round btn-icon"><i
+                    class="fa fa-envelope"></i></button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="col-md-2 col-2">
+                <div class="avatar">
+                  <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image"
+                    class="img-circle img-no-padding img-responsive">
+                </div>
+              </div>
+              <div class="col-ms-7 col-7">
+                Flume
+                <br />
+                <span class="text-danger">
+                  <small>Busy</small>
+                </span>
+              </div>
+              <div class="col-md-3 col-3 text-right">
+                <button class="btn btn-sm btn-outline-success btn-round btn-icon"><i
+                    class="fa fa-envelope"></i></button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+<!-- <div class="row">
+
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+    <div class="col-md-12">
+      <div class="card card-user">
+        <div class="card-header">
+          <h5 class="card-title">Cadastro de Aluno</h5>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-5 pr-1">
+              <div class="form-group">
+                <label for="turma">Turma</label>
+                <input type="text" class="form-control" formControlName="turma" id="turma">
+              </div>
+            </div>
+            <div class="col-md-3 px-1">
+              <div class="form-group">
+                <label for="nomeCompleto">Nome Completo</label>
+                <input type="text" class="form-control" formControlName="nomeCompleto" id="nomeCompleto">
+              </div>
+            </div>
+            <div class="col-md-4 pl-1">
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" formControlName="email" id="email">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 pr-1">
+              <div class="form-group">
+                <label for="telefone">Telefone Residencial</label>
+                <input type="text" class="form-control" formControlName="telefone" id="telefone">
+              </div>
+            </div>
+            <div class="col-md-6 pl-1">
+              <div class="form-group">
+                <label for="celular">Cellular / Whatsapp</label>
+                <input type="text" class="form-control" formControlName="celular" id="celular">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" class="form-control" formControlName="endereco" id="endereco">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" class="form-control" formControlName="cidade" id="cidade">
+              </div>
+            </div>
+            <div class="col-md-4 px-1">
+              <div class="form-group">
+                <label for="estado">Estado</label>
+                <input type="text" class="form-control" formControlName="estado" id="estado">
+              </div>
+            </div>
+            <div class="col-md-4 pl-1">
+              <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="number" class="form-control" formControlName="cep" id="cep">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="formaPagamento">Forma de Pagamento</label>
+                <textarea formControlName="formaPagamento" id="formaPagamento"
+                  class="form-control textarea">Forma de pagamento</textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+ -->
+<div class="col-md-12">
+  <div class="card card-user">
+    <div class="card-header">
+      <h5 class="card-title">Cadastrar Aluno</h5>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+        <div class="divTitForm">
+          <p class="subTitForm"> DADOS BASICOS </p>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="NM_NOME_COMPLETO">Nome Completo</label>
+              <input class="form-control" type="text" formControlName="NM_NOME_COMPLETO" id="NM_NOME_COMPLETO">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pr-1">
+            <div class="form-group">
+              <label for="DT_NASCIMENTO">Data Nascimento</label>
+              <input class="form-control" type="date" formControlName="DT_NASCIMENTO" id="DT_NASCIMENTO">
+            </div>
+          </div>
+          <div class="col-md-4 px-1">
+            <div class="form-group">
+              <label for="NR_ANO_LETIVO">Ano Letivo</label>
+              <input class="form-control" type="text" formControlName="NR_ANO_LETIVO" id="NR_ANO_LETIVO">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="DS_ESCOLA_ANTERIOR">Onde Estudava</label>
+              <input class="form-control" type="text" formControlName="DS_ESCOLA_ANTERIOR" id="DS_ESCOLA_ANTERIOR">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 pr-1">
+            <div class="form-group">
+              <label for="NR_ENDERECO">Endereço Completo</label>
+              <input class="form-control" type="text" formControlName="NR_ENDERECO" id="NR_ENDERECO">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="NM_BAIRRO">Bairro</label>
+              <input class="form-control" type="text" formControlName="NM_BAIRRO" id="NM_BAIRRO">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pr-1">
+            <div class="form-group">
+              <label for="NM_CIDADE">Cidade</label>
+              <input class="form-control" type="text" formControlName="NM_CIDADE" id="NM_CIDADE">
+            </div>
+          </div>
+          <div class="col-md-4 px-1">
+            <div class="form-group">
+              <label for="SG_ESTADO">Estado</label>
+              <select name="SG_ESTADO" formControlName="SG_ESTADO" class="form-control">
+                <option value="sp">SP</option>
+                <option value="rj">RJ</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="NR_CEP">CEP</label>
+              <input class="form-control" type="text" formControlName="NR_CEP" id="NR_CEP">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="NR_TELEFONE">Telefone</label>
+              <input class="form-control" type="text" formControlName="NR_TELEFONE" id="NR_TELEFONE">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="DS_EMAIL">E-mail</label>
+              <input class="form-control" type="text" formControlName="DS_EMAIL" id="DS_EMAIL">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="VL_MENSALIDADE">Valor Mensalidade</label>
+              <input class="form-control" type="text" formControlName="VL_MENSALIDADE" id="VL_MENSALIDADE">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="DS_COMO_CONHECEU">Como Soube do Curso</label>
+              <input class="form-control" type="text" formControlName="DS_COMO_CONHECEU" id="DS_COMO_CONHECEU">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="DS_RG">RG</label>
+              <input class="form-control" type="text" formControlName="DS_RG" id="DS_RG">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="CD_CPF">CPF</label>
+              <input class="form-control" type="text" formControlName="CD_CPF" id="CD_CPF">
+            </div>
+          </div>
+        </div>
+        <div class="divTitForm">
+          <p class="subTitForm"> DADOS DO RESPONSÁVEL </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pr-1">
+            <div class="form-group">
+              <label for="NM_PAI">Nome do Pai</label>
+              <input class="form-control" type="text" formControlName="NM_PAI" id="NM_PAI">
+            </div>
+          </div>
+          <div class="col-md-4 px-1">
+            <div class="form-group">
+              <label for="NR_TEL_PAI">Telefone</label>
+              <input class="form-control" type="text" formControlName="NR_TEL_PAI" id="NR_TEL_PAI">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="DS_EMAIL_PAI">E-mail</label>
+              <input class="form-control" type="text" formControlName="DS_EMAIL_PAI" id="DS_EMAIL_PAI">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 pr-1">
+            <div class="form-group">
+              <label for="NM_MAE">Nome da Mãe</label>
+              <input class="form-control" type="text" formControlName="NM_MAE" id="NM_MAE">
+            </div>
+          </div>
+          <div class="col-md-4 px-1">
+            <div class="form-group">
+              <label for="NR_TEL_MAE">Telefone</label>
+              <input class="form-control" type="text" formControlName="NR_TEL_MAE" id="NR_TEL_MAE">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="DS_EMAIL_MAE">E-mail</label>
+              <input class="form-control" type="text" formControlName="DS_EMAIL_MAE" id="DS_EMAIL_MAE">
+            </div>
+          </div>
+        </div>
+
+        <div class="divTitForm">
+          <p class="subTitForm"> ESTÁGIOS </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="DS_MODULO1_INICIO">Módulo 1 iniciado em</label>
+              <input class="form-control" type="text" formControlName="DS_MODULO1_INICIO" id="DS_MODULO1_INICIO">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="DS_MODULO1_FIM">Finalizado em</label>
+              <input class="form-control" type="text" formControlName="DS_MODULO1_FIM" id="DS_MODULO1_FIM">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="DS_MODULO2_INICIO">Módulo 2 iniciado em</label>
+              <input class="form-control" type="text" formControlName="DS_MODULO2_INICIO" id="DS_MODULO2_INICIO">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="DS_MODULO2_FIM">Finalizado em</label>
+              <input class="form-control" type="text" formControlName="DS_MODULO2_FIM" id="DS_MODULO2_FIM">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="DS_MODULO3_INICIO">Módulo 3 iniciado em</label>
+              <input class="form-control" type="text" formControlName="DS_MODULO3_INICIO" id="DS_MODULO3_INICIO">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="DS_MODULO3_FIM">Finalizado em</label>
+              <input class="form-control" type="text" formControlName="DS_MODULO3_FIM" id="DS_MODULO3_FIM">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="DS_MODULO4_INICIO">Módulo 4 iniciado em</label>
+              <input class="form-control" type="text" formControlName="DS_MODULO4_INICIO" id="DS_MODULO4_INICIO">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="DS_MODULO4_FIM">Finalizado em</label>
+              <input class="form-control" type="text" formControlName="DS_MODULO4_FIM" id="DS_MODULO4_FIM">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="DS_MATH_INICIO">Módulo Math</label>
+              <input class="form-control" type="text" formControlName="DS_MATH_INICIO" id="DS_MATH_INICIO">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="DS_MATH_FIM">Finalizado em</label>
+              <input class="form-control" type="text" formControlName="DS_MATH_FIM" id="DS_MATH_FIM">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 pr-1">
+            <div class="form-group">
+              <label for="DS_GEOGRAPH_INICIO">Módulo Geograph</label>
+              <input class="form-control" type="text" formControlName="DS_GEOGRAPH_INICIO" id="DS_GEOGRAPH_INICIO">
+            </div>
+          </div>
+          <div class="col-md-6 pl-1">
+            <div class="form-group">
+              <label for="DS_GEOGRAPH_FIM">Finalizado em</label>
+              <input class="form-control" type="text" formControlName="DS_GEOGRAPH_FIM" id="DS_GEOGRAPH_FIM">
+            </div>
+          </div>
+        </div>
+        <div class="divTitForm">
+          <p class="subTitForm"> DADOS COMPLEMENTARES </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pr-1">
+            <div class="form-group">
+              <label for="DS_DIA_AULA">Dia da Aula (Semana)</label>
+              <input class="form-control" type="text" formControlName="DS_DIA_AULA" id="DS_DIA_AULA">
+            </div>
+          </div>
+          <div class="col-md-4 px-1">
+            <div class="form-group">
+              <label for="TP_PGTO">Estado</label>
+              <select name="TP_PGTO" formControlName="TP_PGTO" class="form-control">
+                <option value="carne">Carnê</option>
+                <option value="debito">Débito</option>
+                <option value="transf">Transferência</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="HR_HORARIO_AULA">Horário da Aula</label>
+              <input class="form-control" type="text" formControlName="HR_HORARIO_AULA" id="HR_HORARIO_AULA">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pr-1">
+            <div class="form-group">
+              <label for="GR_NOME_GRUPO">Nome do Grupo</label>
+              <input class="form-control" type="text" formControlName="GR_NOME_GRUPO" id="GR_NOME_GRUPO">
+            </div>
+          </div>
+          <div class="col-md-4 px-1">
+            <div class="form-group">
+              <label for="QT_SULFITE">200 folhas de sulfite</label>
+              <input class="form-control" type="text" formControlName="QT_SULFITE" id="QT_SULFITE">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="DT_DATA_VENCIMENTO">Data de Pagamento</label>
+              <input class="form-control" type="text" formControlName="DT_DATA_VENCIMENTO" id="DT_DATA_VENCIMENTO">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="update ml-auto mr-auto">
+            <button class="btn btn-primary btn-round" type="submit">Salvar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
