@@ -1,0 +1,41 @@
+<div class="col-md-12">
+    <div class="card card-user">
+        <div class="card-header">
+            <h5 class="card-title">Listar Aluno</h5>
+        </div>
+        <div class="card-body">
+
+            <div class="grid-container">
+                <div class="container-input">
+                    <table mat-table class="mat-elevation-z8">
+                        <thead>
+                            <tr>
+                                <th *ngFor="let head of headElements" scope="col"
+                                    style="background-color: #34b5b8; color: white;">{{head}} </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr mdbTableCol *ngFor="let aluno of alunos">
+                                <th scope="row" style="width: 1%;">{{aluno.id}}</th>
+                                <td>
+                                    <input matInput type="text" class="form-control" [(ngModel)]="aluno.NomeCompleto">
+                                </td>
+                                <td>
+                                    <input matInput type="text" class="form-control" [(ngModel)]="aluno.Telefone">
+                                </td>
+                                <td>
+                                    <input matInput type="text" class="form-control" [(ngModel)]="aluno.Email">
+                                </td>
+                                <td><button mat-raised-button color="warn" type="button" (click)="UpdateRecord(aluno)"
+                                        class="btn btn-primary">Detalhe</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--   <div class="container-input" class="button-row">
+                        <button mat-raised-button color="warn" type="button" (click)="EditRecord(item)" class="btn btn-primary">Editar </button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "app-survive",
+    "survive": "survive-angular",
+    "app": "app-survive"
+  }
+}

@@ -19,6 +19,7 @@ import { UserComponent } from 'app/pages/alunos/user/user.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MatListModule, MatToolbarModule, MatInputModule, MatPaginatorModule, MatTabsModule, MatIconModule } from '@angular/material';
 import { TabAlunoComponent } from 'app/pages/alunos/tab-aluno/tab-aluno.component';
+import { ListAlunoComponent } from 'app/pages/alunos/list-aluno/list-aluno.component';
 
 @NgModule({
   imports: [
@@ -46,10 +47,12 @@ import { TabAlunoComponent } from 'app/pages/alunos/tab-aluno/tab-aluno.componen
     MapsComponent,
     NotificationsComponent,
     CalendarioComponent,
-    TabAlunoComponent
+    TabAlunoComponent,
+    ListAlunoComponent
   ],
   exports: [
-    UserComponent
+    UserComponent,
+    ListAlunoComponent
   ]
 })
 

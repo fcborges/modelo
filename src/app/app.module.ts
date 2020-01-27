@@ -14,13 +14,13 @@ import { AppRoutes } from './app.routing';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { TabAlunoComponent } from './pages/alunos/tab-aluno/tab-aluno.component';
 
-import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
-import { MatToolbarModule, MatPaginatorModule, MatIconModule, MatTabsModule } from '@angular/material';
-import { UserComponent } from './pages/alunos/user/user.component';
+import { MatToolbarModule, MatPaginatorModule, MatIconModule, MatTabsModule, MatMenuModule, 
+  MatCardModule, MatDividerModule, MatGridListModule } from '@angular/material';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { environment } from 'environments/environment';
+import { AngularFireModule } from '@angular/fire';
 
 
 @NgModule({
@@ -39,10 +39,20 @@ import { UserComponent } from './pages/alunos/user/user.component';
     FooterModule,
     FixedPluginModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatInputModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatMenuModule,
+    MatCardModule,
+    MatDividerModule,
+    MatTabsModule,
+    MatGridListModule,
+    AngularFireModule.initializeApp(environment.firebase)
 
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

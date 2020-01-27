@@ -1,27 +1,29 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { NgForm } from '@angular/forms';
-import { Observable } from 'rxjs/internal/Observable';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AlunoService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private firestore: AngularFirestore) { }
 
-
-  private url = "http://localhost:3000/alunos/";
-  id: number;
-  
-
-  addAluno(form: NgForm): Observable<NgForm> {
-    console.log("form",form)
-    return this.http.post<NgForm>(this.url, form);
+  /* create_NewIcecream : Cria um novo registro na coleção especificada usando o método add */
+  create_NewAluno(record) {
+    return this.firestore.collection('Alunos').add(record);
   }
-
-
-
-
+  /*read_Icecream: Chama o método snapshotChanges , que obterá registros e também será registrado para receber atualizações */
+  read_Alunos() {
+    return this.firestore.collection('Alunos').snapshotChanges();
+  }
+  /*update_Icecream : atualiza o registro pegando o ID e chamando o método de atualização */
+  update_Aluno(recordID, record) {
+    console.log("recordID",recordID," - ", "record",record);
+    this.firestore.doc('Alunos/' + recordID).update(record);
+  }
+  /*delete_Icecream : chama o método de exclusão  ao registrar o ID*/
+  delete_Aluno(record_id) {
+    this.firestore.doc('Alunos/' + record_id).delete();
+  }
 
 }

@@ -9,6 +9,7 @@ import { NotificationsComponent } from '../../pages/notifications/notifications.
 import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
 import { UserComponent } from 'app/pages/alunos/user/user.component';
 import { TabAlunoComponent } from 'app/pages/alunos/tab-aluno/tab-aluno.component';
+import { ListAlunoComponent } from 'app/pages/alunos/list-aluno/list-aluno.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
@@ -19,5 +20,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
-    { path: 'tab-aluno',      component: TabAlunoComponent }
+    { path: 'tab-aluno',      component: TabAlunoComponent },
+    { path: 'list-aluno',     component: ListAlunoComponent }
 ];
