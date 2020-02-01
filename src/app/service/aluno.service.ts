@@ -10,6 +10,7 @@ export class AlunoService {
 
   /* create_NewIcecream : Cria um novo registro na coleção especificada usando o método add */
   create_NewAluno(record) {
+    console.log("record", record);
     return this.firestore.collection('Alunos').add(record);
   }
   /*read_Icecream: Chama o método snapshotChanges , que obterá registros e também será registrado para receber atualizações */
