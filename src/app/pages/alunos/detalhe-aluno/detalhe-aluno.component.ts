@@ -63,7 +63,7 @@ export class DetalheAlunoComponent implements OnInit {
 
   ConsultaAluno(numAluno) {
     let validacao
-    
+
     this.alunoService.read_Alunos().subscribe(data => {
       this.alunoSelecionado = data.map(e => {
         console.log('retornoBuscaCodAluno => ', e.payload.doc.data()['CodigoAluno']);
@@ -81,25 +81,25 @@ export class DetalheAlunoComponent implements OnInit {
         this.Cpf              = e.payload.doc.data()['Cpf'];
         this.TipoPagamento    = e.payload.doc.data()['TipoPagamento'];  
 
-
       });
-      if (validacao) {
-
-        this.nomeCompleto  = this.NomeCompleto;     
-        this.codAluno      = this.CodigoAluno;    
-        this.statusAluno   = this.StatusAluno;      
-        this.telefone      = this.Telefone;         
-        this.email         = this.Email;            
-        this.cep           = this.Cep;              
-        this.mensalidade   = this.ValorMensalidade;
-        this.cpf           = this.Cpf;              
-        this.tipoPgto      = this.TipoPagamento;
-
-      } else {
-        this.toasty.warning('Aluno não encontrado!');
-      }
 
     });
+
+    if (validacao) {
+
+      this.nomeCompleto  = this.NomeCompleto;     
+      this.codAluno      = this.CodigoAluno;    
+      this.statusAluno   = this.StatusAluno;      
+      this.telefone      = this.Telefone;         
+      this.email         = this.Email;            
+      this.cep           = this.Cep;              
+      this.mensalidade   = this.ValorMensalidade;
+      this.cpf           = this.Cpf;              
+      this.tipoPgto      = this.TipoPagamento;
+
+    } else {
+      this.toasty.warning('Aluno não encontrado!');
+    }
   }
 
   /*   this.alunoService.read_Alunos().subscribe(data => {
