@@ -16,7 +16,7 @@
                         </thead>
                         <tbody>
                             <tr mdbTableCol *ngFor="let aluno of alunos">
-                                <th scope="row" style="width: 1%;">{{aluno.id}}</th>
+                                <th scope="row" style="width: 1%;">{{aluno.CodigoAluno}}</th>
                                 <td>
                                     <input matInput type="text" class="form-control" [(ngModel)]="aluno.NomeCompleto">
                                 </td>
@@ -26,7 +26,7 @@
                                 <td>
                                     <input matInput type="text" class="form-control" [(ngModel)]="aluno.Email">
                                 </td>
-                                <td><button mat-raised-button color="warn" type="button" (click)="UpdateRecord(aluno)"
+                                <td><button mat-raised-button color="warn" type="button" (click)="detalheAluno(aluno)"
                                         class="btn btn-primary">Detalhe</button></td>
                             </tr>
                         </tbody>

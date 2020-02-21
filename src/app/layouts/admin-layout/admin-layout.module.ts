@@ -21,6 +21,12 @@ import { MatListModule, MatToolbarModule, MatInputModule, MatPaginatorModule, Ma
 import { TabAlunoComponent } from 'app/pages/alunos/tab-aluno/tab-aluno.component';
 import { ListAlunoComponent } from 'app/pages/alunos/list-aluno/list-aluno.component';
 
+import { CpfCnpjModule } from 'ng2-cpf-cnpj';
+import { NgxMaskModule } from 'ngx-mask';
+import { ToastyModule } from 'ng2-toasty';
+import { DetalheAlunoComponent } from 'app/pages/alunos/detalhe-aluno/detalhe-aluno.component';
+
+
 @NgModule({
   imports: [
     CommonModule,
@@ -35,7 +41,10 @@ import { ListAlunoComponent } from 'app/pages/alunos/list-aluno/list-aluno.compo
     MatListModule,
     MatPaginatorModule,
     MatIconModule,
-    MatTabsModule
+    MatTabsModule,
+    CpfCnpjModule ,
+    NgxMaskModule.forRoot(),
+    ToastyModule.forRoot()
   ],
   declarations: [
     DashboardComponent,
@@ -48,7 +57,8 @@ import { ListAlunoComponent } from 'app/pages/alunos/list-aluno/list-aluno.compo
     NotificationsComponent,
     CalendarioComponent,
     TabAlunoComponent,
-    ListAlunoComponent
+    ListAlunoComponent,
+    DetalheAlunoComponent
   ],
   exports: [
     UserComponent,

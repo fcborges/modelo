@@ -1,0 +1,69 @@
+<div class="col-md-12">
+    <div class="card card-user">
+        <div class="card-header">
+            <h5 class="card-title">Detalhe Aluno</h5>
+        </div>
+        <div class="card-body">
+            <div class="grid-container">
+                <div class="container-input">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <mat-form-field class="example-full-width">
+                                <mat-label>Buscar Aluno</mat-label>
+                                <input matInput name="numAluno" [(ngModel)]="numAluno">
+                            </mat-form-field>
+                            <div class="container-input" class="" style="font-size: 10px;">
+                                <button mat-raised-button color="warn" type="button"
+                                    (click)="ConsultaAluno(numAluno); alunoExiste==true" class="btn btn-primary"
+                                    style="margin-left: 150%; margin-top: -50%;"> Consultar
+                                </button>
+                                <button mat-raised-button color="warn" type="button"
+                                    (click)="limpar(); alunoExiste==true" class="btn btn-primary"
+                                    style="margin-left: 240%; margin-top: -70%;"> Limpar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label for="CodigoAluno"><b>Codigo</b></label>
+                            <input type="text" class="form-control" id="CodigoAluno" [(ngModel)]="CodigoAluno" readonly>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="StatusAluno"><b>Status</b></label>
+                            <input type="text" class="form-control" id="StatusAluno" [(ngModel)]="StatusAluno" readonly>
+                        </div>
+                        <div class="col-md-8">
+                            <label for="NomeCompleto">Nome Completo</label>
+                            <input type="text" class="form-control" id="NomeCompleto" [(ngModel)]="NomeCompleto">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Telefone">Telefone</label>
+                            <input type="text" class="form-control" id="Telefone" [(ngModel)]="Telefone">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="Email" [(ngModel)]="Email">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Cep">Cep</label>
+                            <input type="text" class="form-control" id="Cep" [(ngModel)]="Cep">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="ValorMensalidade">Valor Mensalidade</label>
+                            <input type="text" class="form-control" id="ValorMensalidade"
+                                [(ngModel)]="ValorMensalidade">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Cpf">Cpf</label>
+                            <input type="text" class="form-control" id="Cpf" [(ngModel)]="Cpf">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="TipoPagamento">Tipo de Pagamento</label>
+                            <input type="text" class="form-control" id="TipoPagamento" [(ngModel)]="TipoPagamento">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ng2-toasty></ng2-toasty>
+        </div>

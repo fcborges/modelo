@@ -6,12 +6,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCf30XPGDWNUShuCHLqZbTGTis79Hu2kP4",
-    authDomain: "app-survive.firebaseapp.com",
-    databaseURL: "https://app-survive.firebaseio.com",
-    projectId: "app-survive",
-    storageBucket: "app-survive.appspot.com",
-    messagingSenderId: "223424272392"
+    apiKey: "AIzaSyAqSvKCQ6Wx0YFjT_EMNCVR-lByCb26KlY",
+    authDomain: "app-f12-angular.firebaseapp.com",
+    databaseURL: "https://app-f12-angular.firebaseio.com",
+    projectId: "app-f12-angular",
+    storageBucket: "app-f12-angular.appspot.com",
+    messagingSenderId: "69750774897"
   }
+
+
 };
 
